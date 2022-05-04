@@ -37,14 +37,14 @@ body{
  
 
 .cookie-title{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: lighter;
 }
 
 .cookie-subtitle{
   font-weight: bold;
   padding: 0.5rem 0rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 button{
@@ -52,7 +52,7 @@ button{
   padding: 0.5rem 1rem;
   color: #4f2626;
   font-family: "Poppins", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: bold;
   border-radius: 0.3rem;
 }
