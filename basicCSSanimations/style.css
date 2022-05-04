@@ -11,4 +11,9 @@ button{
   border: none;
   color: white;
   background: rgb(57, 56, 56);
+  transition: background 0.75s ease-out;
+}
+
+button:hover{
+  background: rgb(88, 83, 83);
 }
