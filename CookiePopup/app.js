@@ -9,7 +9,7 @@ tl.fromTo('.cookie', {opacity: 0, x:-50, rotation: '-45deg'}, {opacity: 1, x:0, 
 tl.fromTo('.text', {x:30, opacity:0}, {x: 0, opacity: 1}, '<')
 
 //Cookie Jump
-tl.fromTo('.cookie', {y:0, rotation: '0deg'}, {y:-20, rotation: '-20deg', duration:, yoyo: true, repeat: -1})
+tl.fromTo('.cookie', {y:0, rotation: '0deg'}, {y:-20, rotation: '-20deg', duration: 1, yoyo: true, repeat: -1})
 tl.fromTo('#crumbs', {y:0}, {y:-20, rotation: '-10deg', duration: 1.5, repeat: -1}, '<')
 
 //Fading cookie out 
