@@ -33,6 +33,7 @@ body{
 
 .cookie{
   transform: scale(0.6);
+  overflow: visible;
 }
  
 
@@ -43,7 +44,7 @@ body{
 
 .cookie-subtitle{
   font-weight: bold;
-  padding: 0.5rem 0rem;
+  padding: 0.7rem 0rem;
   font-size: 0.6rem;
 }
 
