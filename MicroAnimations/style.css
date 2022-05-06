@@ -35,3 +35,9 @@ body {
 .linkedin-title {
   padding-left: 1rem;
 }
+
+.notification-svg,
+.linkedin-svg,
+.messages-svg{
+  overflow: visible;
+}
