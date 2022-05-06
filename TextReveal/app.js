@@ -53,3 +53,21 @@ tl.fromTo(
   { y: "100%", opacity: 0 }, 
   { y:0 , opacity: 1 }, "<20%" 
 );
+
+tl.fromTo('.cta-button', {y: 20, opacity: 0}, {y: 0, opacity: 1}, "<")
+
+
+//Split nav text 
+const logo = document.querySelector('.logo');
+const letters = logo.textContent.split(""); 
+
+logo.textContent = "";
+
+letters.forEach((letter) => {
+  logo.innerHTML += '<span class="letter">'+ letter + '</span>'
+})
+
+gsap.set('.letter', {display: "inline-block" });
+
+gsap.fromTo('.letter', {y: "100%"}, {y: 0, delay: 1, stagger: 0.05, ease: 'back.out(3)'})
+
