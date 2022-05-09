@@ -14,7 +14,7 @@ body {
 }
 
 form {
-  min-height: 50vh;
+  min-height: 60vh;
   width: 60vw;
   background: white;
   color: #777474;
@@ -26,10 +26,6 @@ form {
 
 .title {
   color: #6391e8;
-  font-size: 1.2rem;
-}
-.discription{
-  font-size: 0.8rem;
 }
 .contact-right,
 .contact-left {
@@ -76,10 +72,9 @@ form {
 .promo-container {
   position: relative;
   display: flex;
-  padding-top: 1rem;
 }
 .checkbox {
-  
+  opacity: 0;
   cursor: pointer;
   z-index: 3;
 }
