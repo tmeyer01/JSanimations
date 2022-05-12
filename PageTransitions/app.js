@@ -12,17 +12,33 @@ const tlEnter = gsap.timeline({
 const leaveAnimation = (current, done) =>{
   const product = current.querySelector('.image-container');
   const text = current.querySelector('.showcase-text');
-  const circles = current.querySelector('.circle');
+  const circles = current.querySelectorAll('.circle');
   const arrow = current.querySelector('.showcase-arrow');
 
   return(
     tlLeave.fromTo(arrow, {opacity:1, y:0}, {opacity: 0, y:50}),
-    tlLeave.fromTo(product, 
+    tlLeave.fromTo(
+      product, 
       {y: 0, opacity: 1}, 
       {y: 100, opacity: 0, onComplete: done}, 
       '<'
     ),
-    tlLeave.fromTo(text, {y: 0, opacity:1}, {opacity: 0, y: 100}, '<')
+    tlLeave.fromTo(
+      text, 
+      {y: 0, opacity:1}, 
+      {opacity: 0, y: 100}, 
+      '<'
+    ),
+    tlLeave.fromTo(
+      circles,
+      {y:0, opacity: 1},
+      {
+        y: -200,
+        opacity: 0,
+        stagger: 0.15,
+      },
+      '<'
+    )
     
   )
 };
